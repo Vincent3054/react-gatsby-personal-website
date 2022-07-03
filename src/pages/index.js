@@ -85,6 +85,8 @@ const IndexPage = () => (
       <h1>
                 Welcome to <b>Gatsby!</b>
                 <Link to="/page-3/">Go to NEW page</Link>
+                <Link to="/home/">Go to Home page</Link>
+
 
       </h1>
       <p className={styles.intro}>

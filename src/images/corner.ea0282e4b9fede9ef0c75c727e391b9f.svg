@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="282.903" height="282.903" viewBox="0 0 282.903 282.903">
+  <g id="corner" transform="translate(-47.75 -151.75)">
+    <path id="Path_15249" data-name="Path 15249" d="M873.684,468.037v-41.53h41.53" transform="translate(-825.684 -274.507)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_15252" data-name="Path 15252" d="M0,41.53V0H41.53" transform="translate(330.403 434.403) rotate(180)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_15250" data-name="Path 15250" d="M0,41.53V0H41.53" transform="translate(48 434.403) rotate(-90)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_15251" data-name="Path 15251" d="M0,41.53V0H41.53" transform="translate(330.403 152) rotate(90)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.5"/>
+  </g>
+</svg>
