@@ -253,6 +253,20 @@ a:-webkit-any-link {
 .css-k008qs {
     display: flex;
 }
+.css-15po4rs {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 48px;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 96px);
+}
 .css-183pgf2 {
     width: var(--chakra-sizes-6);
     height: var(--chakra-sizes-6);
@@ -289,6 +303,11 @@ a:-webkit-any-link {
     align-items: center;
     flex-direction: row;
     color: var(--chakra-colors-green-500);
+}
+.css-y7lu36 > :not(style) ~ :not(style) {
+    margin-top: 0px;
+    margin-inline: 20px 0px;
+    margin-bottom: 0px;
 }
 .css-j7qwjs {
     display: flex;
@@ -420,8 +439,8 @@ a:-webkit-any-link {
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
-    /* border-bottom-width: ; */
-    /* border-bottom-style: ; */
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
     padding: 24px;
     border-color: var(--chakra-colors-green-500);
 }
@@ -705,7 +724,9 @@ a:-webkit-any-link {
     border-color: var(--chakra-colors-green-500);
 }
 .css-6gs9hh{
-    width: 70%;
+    /* width: 70%; */
+    margin-bottom: 0px;
+    padding-right: 10px;
 }
 .css-1cvzsx5{
     display: flex;
@@ -745,11 +766,11 @@ a:-webkit-any-link {
 .css-1s832on {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    border-right-width: 1px;
-    border-right-style: solid;
+    width: 33%;
+    /* border-right-width: 1px; */
+    /* border-right-style: solid; */
     border-color: var(--chakra-colors-green-500);
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
 }
 .css-3o4yf2 {
     text-transform: uppercase;
@@ -774,7 +795,7 @@ a:-webkit-any-link {
 }
 .css-1ol22ox {
     height: 100%;
-    width: 450px;
+    /* width: 450px; */
     border-radius: var(--chakra-radii-xl);
 }
 .css-589axb {
@@ -792,7 +813,7 @@ a:-webkit-any-link {
     -webkit-box-pack: center;
     justify-content: center;
     flex: 1 1 0%;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
 }
 .css-jflkg2 {
     display: flex;
@@ -845,6 +866,25 @@ a:-webkit-any-link {
 .css-128e4yw {
     transform: scaleX(-1);
     width: 100%;
+}
+.css-1hd1wp4 {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1500px){
+    
+     .css-58f8ah{
+        display: none;
+    }
+    .css-1s832on{
+        width: 100%;
+    } 
 }
 @media screen and (min-width: 80em){
     .css-16w502t{
@@ -918,7 +958,7 @@ a:-webkit-any-link {
     }
     .css-16w502t{
         font-size: 16px;
-    }    
+    }           
 }
 @media screen and (min-width: 48em){
     .css-v9r38k {
