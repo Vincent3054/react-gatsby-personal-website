@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import * as ReactDOM from 'react-dom';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { Link } from 'gatsby'
-import "../components/home.css"
+import '../components/page1.css'
+import '../components/page2.css'
+import '../components/page3.css'
 import Layout from '../components/layout'
-import { Hide, Text } from '@chakra-ui/react'
+import { Grid, GridItem, Text } from '@chakra-ui/react'
 
 //SVG、IMG、MP4、WEBM
 import skylogo from '../images/skylogo.png';
@@ -22,10 +23,12 @@ import ethtext from '../images/ethtest.png';
 import downWebm from '../images/education.ddd6aff58f188f9d70d7.gif';
 import downRightGif from '../images/AbilitiesTest2.gif';
 import downRightStyle from '../images/arrowGroup.a854994e6e9f3fb9f9c05ecfcf3b2ea5.svg';
-
+import ball from '../images/about_pic.610b7ef3c096f2e96e88.png';
+import mugShot from '../images/MugShot.png'
+import page3background from '../images/about_bg.d340d9595868280cdda0.png'
 function Resume() {
-    const [showResults, setShowResults] = React.useState(false)
-    const onClick = () => showResults == false ? setShowResults(true):setShowResults(false);
+    const [showResults, setShowResults] = useState(false)
+    const onClick = () => showResults == false ? setShowResults(true) : setShowResults(false);
     const Results = () => (
         <div className="css-15po4rs" style={{ backdropFilter: `blur(14px)` }}>
             <a className="chakra-link css-v9r38k">ABOUT</a>
@@ -37,6 +40,27 @@ function Resume() {
             <a className="chakra-link css-v9r38k">Q&amp;A</a>
         </div>
     )
+    const [scrolling, setScrolling] = useState(false);
+    const [scrollTop, setScrollTop] = useState(0);
+    useEffect(() => {
+        const onScroll = e => {
+            setScrollTop(e.target.documentElement.scrollTop);
+            setScrolling(e.target.documentElement.scrollTop > scrollTop);
+        };
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [scrollTop]);
+    useEffect(() => {
+        var top = document.querySelector('.css-iybxr5');
+        if (scrolling) {
+            top.style.opacity = "0";
+            top.style.transform = "translateY(-80px) translateZ(0px)"
+        } else {
+            top.style.opacity = "1";
+            top.style.transform = "translateY(0px) translateZ(0px)"
+        }
+    });
+
     return (
         <div className='chakra-ui-light'>
             <div id='root'>
@@ -44,7 +68,7 @@ function Resume() {
                     <img src={skylogo} className="chakra-image css-dov9nq" style={{ opacity: 1, width: 200 }} />
                 </div>
                 <div className='css-1p8qfhk'>
-                    <div className="css-iybxr5" style={{ opacity: 1, transform: undefined }}>
+                    <div className="css-iybxr5" style={{ opacity: 1, transform: undefined, transition: `0.5s ease-in ` }}>
                         <div className="css-wm488v" style={{ backdropFilter: `blur(14px)` }}>
                             <a className="chakra-link css-2n2ro8">
                                 <img src={skylogo} className="chakra-image css-tcg55f" style={{ marginBottom: 0 }} />
@@ -244,7 +268,517 @@ function Resume() {
                             </div>
                         </div>
                     </div>
+                    <div justify="center" className="css-8atqhb">
+                        <div name="about">
+                            <div className="css-1htib5q">
+                                <div className="css-15nuc2v">
+                                    <div className="css-3kl7zo">
+                                        <div className="css-156k7ip2">
+                                            <h2 className="chakra-heading css-o1hqf8 css-156k7ip2">ABOUT</h2>
+                                        </div>
+                                        <div className="css-156k7ip2">
+                                            <h2 className="chakra-heading css-1gwjdoc css-156k7ip2">JIAN-CHENG</h2>
+                                        </div>
+                                        <div className="css-156k7ip">
+                                            <div className="css-1ns35bm"></div>
+                                            <div className="css-dgi8dv"></div>
+
+                                            <div className="chakra-text css-1ci2rko">
+                                                <div className="css-grnj0k2-1">
+                                                    <img src={mugShot} className="chakra-image" width={200} height={200} />
+                                                    <div style={{ marginLeft: 30 }}>
+                                                        <p><span className="css-jx61ed">Name：</span>JIAN-CHENG CHEN</p>
+                                                        <p><span className="css-jx61ed">Location：</span>Taichung City</p>
+                                                        <p><span className="css-jx61ed">Education：</span>NUTC</p>
+                                                        <p><span className="css-jx61ed">Email：</span>ok96305@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="css-inku9w">
+                                        <h2 className="chakra-heading css-o1hqf8 ">Abilities</h2>
+                                        <h2 className="chakra-heading css-1gwjdoc2" >Front End</h2>
+                                        <Grid templateColumns='repeat(5, 1fr)' gap={4}>
+                                            <GridItem colSpan={2} h='200'>
+                                                <p>HTML(5)</p>
+                                                <p>CSS(3)</p>
+                                                <p>JavaScript(ES6)</p>
+                                                <p>JQuery</p>
+                                            </GridItem>
+                                            <GridItem colStart={4} colEnd={6} h='200'>
+                                                <p>RESTful API/Ajax</p>
+                                                <p>React/Redux</p>
+                                                <p>Gatsby/GraphQL</p>
+                                                <p>Vue/Vuex</p>
+                                            </GridItem>
+                                        </Grid>
+                                        <h2 className="chakra-heading css-1gwjdoc2" >Back End</h2>
+                                        <Grid templateColumns='repeat(5, 1fr)' gap={4}>
+                                            <GridItem colSpan={2} h='200'>
+                                                <p>C#</p>
+                                                <p>.NET Framework</p>
+                                                <p>ASP.NET Core</p>
+                                                <p>EF Core/LINQ</p>
+                                            </GridItem>
+                                            <GridItem colStart={4} colEnd={6} h='200'  >
+                                                <p>Dapper</p>
+                                                <p>MVC Pattern</p>
+                                                <p>NUnit</p>
+                                                <p>MS SQL</p>
+                                            </GridItem>
+                                        </Grid>
+                                        <h2 className="chakra-heading css-1gwjdoc2">Other</h2>
+                                        <Grid templateColumns='repeat(5, 1fr)' gap={4}>
+                                            <GridItem colSpan={2} h='50'>
+                                                <p>Scrum/Kanban/Pair</p>
+                                                <p>Atlassian/Jira</p>
+                                            </GridItem>
+                                            <GridItem colStart={4} colEnd={6} h='50'  >
+                                                <p>Git/Git Flow/SVN</p>
+                                                <p>GitLab CI/CD</p>
+                                            </GridItem>
+                                        </Grid>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="css-y65vn" style={{backgroundImage: `url("../images/about_bg.d340d9595868280cdda0.png")`}}>
+                                <div className="css-161kdgv">
+                                    <h2 className="chakra-heading css-1ezh9kl">Student feedback</h2>
+                                    <div className="css-1t0s12a">
+                                        <div className="slick-slider css-1iihtel slick-initialized" dir="ltr" style={{ width: `100%`, padding: `30px 0px` }}>
+                                            <div className="slick-list">
+                                                <div className="slick-track" style={{ width: 7560, opacity: 1, transform: `translate3d(-1080px, 0px, 0px)` }}>
+                                                    <div data-index="-1" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 1080 }}><div>
+                                                        <div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="0" className="slick-slide slick-active slick-current" tabIndex="-1" aria-hidden="false" style={{ outline: `none`, width: 1080 }}>
+                                                        <div>
+                                                            <div className="css-z4vrou">
+                                                                <div className="css-1p2x7r1">
+                                                                    <div className="css-2tjxfx">
+                                                                        <p className="chakra-text css-nhq6ym">Welly</p>
+                                                                        <p className="chakra-text css-1ndgkws">Z22012007</p>
+                                                                    </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="css-1p2x7r1"><div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Zhang</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013019</p>
+                                                                </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">Thank you for inviting these excellent lecturers. It is non-trivial to be the first one in the educational space yet very valuable. I believe that The Z Institute will become better and better!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="css-1p2x7r1">
+                                                                    <div className="css-2tjxfx">
+                                                                        <p className="chakra-text css-nhq6ym">Emerson Liu</p>
+                                                                        <p className="chakra-text css-1ndgkws">Z22013001</p>
+                                                                    </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">I can feel that the course content is carefully designed, and the invited lecturers are also excellent. It would be even better if the streaming service and discord information organization can be improved. A big thumbs up to the lecturers and crew of The Z Institute!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="1" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 1080 }}><div>
+                                                        <div className="css-z4vrou">
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Amanda Liao</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013010</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thanks to Z institute's awesome teaching assistants and crew in providing additional learning resources, organizing className notes and answering questions. They are dilligent and attentive to students!</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Anson Luk</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Being able to find people with the same interests and forming a truly active community is highly valuable. I hope Z Institute can continue to thrive!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Alex Chiang</p>
+                                                                    <p className="chakra-text css-1ndgkws">110AB8044</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for cultivating Taiwanese blockchain talents and gathering so many outstanding people. Fortunately, our group has a high survival rate and we have learned a lot from our peers!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="2" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 1080 }}><div>
+                                                        <div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="3" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 1080 }}>
+                                                        <div>
+                                                            <div className="css-z4vrou">
+                                                                <div className="css-1p2x7r1">
+                                                                    <div className="css-2tjxfx">
+                                                                        <p className="chakra-text css-nhq6ym">Welly</p>
+                                                                        <p className="chakra-text css-1ndgkws">Z22012007</p>
+                                                                    </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="css-1p2x7r1">
+                                                                    <div className="css-2tjxfx">
+                                                                        <p className="chakra-text css-nhq6ym">Zhang</p>
+                                                                        <p className="chakra-text css-1ndgkws">Z22013019</p>
+                                                                    </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">Thank you for inviting these excellent lecturers. It is non-trivial to be the first one in the educational space yet very valuable. I believe that The Z Institute will become better and better!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="css-1p2x7r1">
+                                                                    <div className="css-2tjxfx">
+                                                                        <p className="chakra-text css-nhq6ym">Emerson Liu</p>
+                                                                        <p className="chakra-text css-1ndgkws">Z22013001</p>
+                                                                    </div>
+                                                                    <div className="css-19q6myf">
+                                                                        <p className="chakra-text css-0">I can feel that the course content is carefully designed, and the invited lecturers are also excellent. It would be even better if the streaming service and discord information organization can be improved. A big thumbs up to the lecturers and crew of The Z Institute!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="4" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 1080 }}><div>
+                                                        <div className="css-z4vrou">
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Amanda Liao</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013010</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thanks to Z institute's awesome teaching assistants and crew in providing additional learning resources, organizing className notes and answering questions. They are dilligent and attentive to students!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Anson Luk</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Being able to find people with the same interests and forming a truly active community is highly valuable. I hope Z Institute can continue to thrive!</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Alex Chiang</p>
+                                                                    <p className="chakra-text css-1ndgkws">110AB8044</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for cultivating Taiwanese blockchain talents and gathering so many outstanding people. Fortunately, our group has a high survival rate and we have learned a lot from our peers!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="5" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 1080 }}><div>
+                                                        <div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul className="slick-dots" style={{ display: ` block` }}>
+                                                <li className="slick-active">
+                                                    <button>1</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>2</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>3</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="css-1rr5s11">
+                                        <div className="slick-slider css-1iihtel slick-initialized" dir="ltr" style={{ width: 100, padding: `10px 0px` }}>
+                                            <div className="slick-list">
+                                                <div className="slick-track" style={{ opacity: 1, transform: `translate3d(0px, 0px, 0px)` }}>
+                                                    <div data-index="-1" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}><div>
+                                                        <div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="0" className="slick-slide slick-active slick-current" tabIndex="-1" aria-hidden="false" style={{ outline: `none`, width: 0 }}>
+                                                        <div><div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Welly</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22012007</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!</p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="1" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Zhang</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013019</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for inviting these excellent lecturers. It is non-trivial to be the first one in the educational space yet very valuable. I believe that The Z Institute will become better and better!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="2" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Emerson Liu</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013001</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">I can feel that the course content is carefully designed, and the invited lecturers are also excellent. It would be even better if the streaming service and discord information organization can be improved. A big thumbs up to the lecturers and crew of The Z Institute!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="3" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1"><div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Amanda Liao</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013010</p>
+                                                            </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thanks to Z institute's awesome teaching assistants and crew in providing additional learning resources, organizing className notes and answering questions. They are dilligent and attentive to students!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="4" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Anson Luk</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Being able to find people with the same interests and forming a truly active community is highly valuable. I hope Z Institute can continue to thrive!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="5" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Alex Chiang</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z110AB8044</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for cultivating Taiwanese blockchain talents and gathering so many outstanding people. Fortunately, our group has a high survival rate and we have learned a lot from our peers!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="6" className="slick-slide" tabIndex="-1" aria-hidden="true" style={{ outline: `none`, width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="7" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Welly</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22012007</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="8" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Zhang</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013019</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for inviting these excellent lecturers. It is non-trivial to be the first one in the educational space yet very valuable. I believe that The Z Institute will become better and better!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div data-index="9" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Emerson Liu</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013001</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">I can feel that the course content is carefully designed, and the invited lecturers are also excellent. It would be even better if the streaming service and discord information organization can be improved. A big thumbs up to the lecturers and crew of The Z Institute!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="10" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Amanda Liao</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z22013010</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thanks to Z institute's awesome teaching assistants and crew in providing additional learning resources, organizing className notes and answering questions. They are dilligent and attentive to students!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="11" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}><div>
+                                                        <div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Anson Luk</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">Being able to find people with the same interests and forming a truly active community is highly valuable. I hope Z Institute can continue to thrive!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div data-index="12" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div>
+                                                            <div className="css-1p2x7r1">
+                                                                <div className="css-2tjxfx">
+                                                                    <p className="chakra-text css-nhq6ym">Alex Chiang</p>
+                                                                    <p className="chakra-text css-1ndgkws">Z110AB8044</p>
+                                                                </div>
+                                                                <div className="css-19q6myf">
+                                                                    <p className="chakra-text css-0">Thank you for cultivating Taiwanese blockchain talents and gathering so many outstanding people. Fortunately, our group has a high survival rate and we have learned a lot from our peers!
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="13" tabIndex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: 0 }}>
+                                                        <div><div className="css-1p2x7r1">
+                                                            <div className="css-2tjxfx">
+                                                                <p className="chakra-text css-nhq6ym">Ken</p>
+                                                                <p className="chakra-text css-1ndgkws">Z22013067</p>
+                                                            </div>
+                                                            <div className="css-19q6myf">
+                                                                <p className="chakra-text css-0">I learned the general development process of Solidity and I have a better understanding of the industry. I can also really get in touch with people working in the blockchain industry through offline activities, and I am more certain that I really want to be a blockchain engineer in the future!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul className="slick-dots" style={{ display: `block` }}>
+                                                <li className="slick-active">
+                                                    <button>1</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>2</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>3</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>4</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>5</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>6</button>
+                                                </li>
+                                                <li className="">
+                                                    <button>7</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     );

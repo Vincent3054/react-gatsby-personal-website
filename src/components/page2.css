@@ -1,0 +1,215 @@
+.css-1htib5q {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-inline: 18px;
+    background: var(--chakra-colors-black);
+    color: var(--chakra-colors-white);
+    border-top-color: #00FFB0;
+    border-bottom-color: #00FFB0;
+    border-width: 1px 0px 1px 0px;
+
+}
+.css-15nuc2v {
+    display: flex;
+    flex-flow: column wrap;
+    --chakra-space-y-reverse: 1;
+    --chakra-divide-y-reverse: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    /* height: 700px; */
+}
+.css-3kl7zo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    /* align-items: center; */
+    /* justify-content: center;   */
+    /* text-align: left; */
+}
+.css-o1hqf8 {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+.css-1gwjdoc {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color:#00FFB0;
+}
+.css-1gwjdoc2{
+    font-family: var(--chakra-fonts-heading);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-transform: uppercase;
+    color:#00FFB0;
+}
+.css-156k7ip {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+}
+.css-156k7ip2 {
+    display: flex;
+    justify-content: center;
+}
+.css-1ns35bm {
+    position: absolute;
+    display: none;
+    border-top-color:#00FFB0;
+    border-bottom-color:#00FFB0;
+    border-left-color:#00FFB0;
+    height: 100%;
+    width: 9px;
+    border-width: 1px 0px 1px 1px;
+    border-right: 0px;
+}
+.css-dgi8dv {
+    position: absolute;
+    display: none;
+    border-top-color: #00FFB0;
+    border-right-color: #00FFB0;
+    border-bottom-color:#00FFB0;
+    right: 0px;
+    height: 100%;
+    width: 9px;
+    border-width: 1px 1px 1px 0px;
+    border-left: 0px;
+}
+.css-1ci2rko {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 0px;
+    font-size: 15px;
+}
+.css-1ci2rko span{
+    color:#00FFB0;
+}
+.css-1ci2rko p{
+    margin-bottom: 24px;
+
+}
+
+.css-jx61ed {
+    color: #00FFB0;
+}
+.css-inku9w {
+    /* display: flex; */
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* width: 100%; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.css-dbyjmh {
+    width: 80%;
+}
+.css-grnj0k2-1{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* width: 50%;     */
+    /* padding: 24px; */
+    flex: 1 1 0%;
+}
+
+
+@media screen and (min-width: 48em)
+{
+    .css-15nuc2v {
+        width: 90%;
+    }
+    .css-o1hqf8 {
+        line-height: 1.2;
+    }
+    .css-1gwjdoc {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 62em)
+{
+    .css-1htib5q {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .css-3kl7zo {
+        width: 50%;        
+    }
+    .css-156k7ip {
+        width: 85%;
+        justify-content: left;
+
+    }
+    .css-15nuc2v {
+        flex-direction: row;
+        width: 80%;
+    }
+    .css-o1hqf8 {
+        font-size: 60px;
+    }
+    .css-1gwjdoc {
+        font-size: 50px;
+    }
+    
+    .css-1ci2rko {
+        padding-inline: 50px;
+    }
+    .css-inku9w {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .css-dbyjmh {
+        width: 75%;
+    }
+    .css-156k7ip2 {
+        display: flex;
+        justify-content: left;
+    }
+}
+@media screen and (min-width: 80em)
+{
+    .css-15nuc2v {
+        width: 960px;
+    }  
+    .css-o1hqf8 {
+        font-size: 80px;
+    }
+    .css-1gwjdoc {
+        font-size: 70px;
+    }
+    .css-1ns35bm {
+        display: block;
+    }
+    .css-dgi8dv {
+        display: block;
+    }
+    
+   
+}
+@media screen and (min-width: 96em)
+{
+    .css-15nuc2v {
+        width: 1280px;
+    }    
+}

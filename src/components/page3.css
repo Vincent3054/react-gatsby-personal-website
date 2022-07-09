@@ -1,0 +1,227 @@
+.css-y65vn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../images/about_bg.d340d9595868280cdda0.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--chakra-colors-white);
+
+}
+.css-161kdgv {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.css-1ezh9kl {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: var(--chakra-fontWeights-bold);
+    font-size: var(--chakra-fontSizes-3xl);
+    line-height: 1.33;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.css-1t0s12a {
+    display: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1080px;
+}
+.slick-slider {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
+}
+.slick-list, .slick-slider {
+    display: block;
+    position: relative;
+}
+.css-1iihtel .slick-list {
+    position: relative;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.slick-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.css-1iihtel .slick-track {
+    display: flex;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.slick-track {
+    display: block;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+}
+.slick-track:after, .slick-track:before {
+    content: "";
+    display: table;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.css-1p2x7r1 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    background: var(--chakra-colors-black);
+}
+.css-2tjxfx {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.css-nhq6ym {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--chakra-colors-white);
+}
+.css-1ndgkws {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--chakra-colors-green-500);
+}
+.css-19q6myf {
+    display: flex;
+    width: 100%;
+}
+.css-z4vrou {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: unset;
+    padding-inline: 40px;
+}
+.slick-dots {
+    bottom: -25px;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.slick-dots li, .slick-dots li button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    position: relative;
+}
+.slick-dots li button {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    padding: 5px;
+}
+.slick-dots li button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    content: "•";
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: .25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}
+.css-1iihtel .slick-dots li.slick-active button::before {
+    color: rgb(0, 255, 176) !important;
+}
+.css-1iihtel .slick-dots li button::before {
+    color: rgb(0, 255, 176) !important;
+}
+.slick-dots li.slick-active button:before {
+    color: #000;
+    opacity: .75;
+}
+.css-1rr5s11 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 20px;
+    max-width: 1080px;
+}
+
+@media screen and (min-width: 62em){
+    .css-161kdgv {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    .css-1t0s12a {
+        display: flex;
+    }
+    .css-1p2x7r1 {
+        flex-direction: row;
+    }
+    .css-2tjxfx {
+        width: 30%;
+    }
+    .css-19q6myf {
+        width: 60%;
+    }
+    .css-z4vrou {
+        height: 400px;
+    }
+    .css-1rr5s11 {
+        display: none;
+    }
+}
+@media screen and (min-width: 48em){
+    .css-1ezh9kl {
+        font-size: var(--chakra-fontSizes-4xl);
+        line-height: 1.2;
+    }
+}
+

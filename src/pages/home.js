@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import "../components/home.css"
+import "../components/page1.css"
 import Layout from '../components/layout'
 import { Text } from '@chakra-ui/react'
 

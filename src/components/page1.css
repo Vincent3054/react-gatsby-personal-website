@@ -1,6 +1,6 @@
 ::selection {    
     color: var(--chakra-colors-black);
-    background-color: var(--chakra-colors-green-500);
+    background-color: #00FFB0;
 }
 *, ::before, ::after {
     border-color: var(--chakra-colors-gray-200);
@@ -99,7 +99,7 @@ a:-webkit-any-link {
     border-top-style: initial;
     border-left-style: initial;
     border-right-style: initial;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     height: 48px;
 }
 .css-wm488v {
@@ -113,7 +113,7 @@ a:-webkit-any-link {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     flex: 1 1 0%;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     background: rgba(0, 0, 0, 0.8);
 }
 .css-tcg55f {
@@ -155,6 +155,10 @@ a:-webkit-any-link {
     padding-bottom: 10px;
     font-size: 18px;
 }
+.css-1uzmgig:hover, .css-1uzmgig[data-hover] {
+    text-decoration: none;
+    color: #00FFB0;
+}
 .css-cvhavf {
     display: flex;
     -webkit-box-align: center;
@@ -164,7 +168,7 @@ a:-webkit-any-link {
     border-left-style:solid;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     background: rgba(0, 0, 0, 0.8);
 }
 .css-1sxrsep {
@@ -191,7 +195,7 @@ a:-webkit-any-link {
     font-size: var(--chakra-fontSizes-md);
     padding-inline: 0px;
     background: unset;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
 }
 .css-1irktzc {
     transition: opacity 0.4s ease 0s;
@@ -246,9 +250,9 @@ a:-webkit-any-link {
     width: 50px;
     border-left-width:1px ;
     border-left-style: solid;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     background: rgba(0, 0, 0, 0.9);
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-k008qs {
     display: flex;
@@ -273,7 +277,7 @@ a:-webkit-any-link {
     display: inline-block;
     line-height: 1em;
     flex-shrink: 0;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     vertical-align: middle;
 }
 .css-zo65ya {
@@ -292,7 +296,7 @@ a:-webkit-any-link {
     /* border-top-style: ; */
     z-index: 20;
     background: rgba(0, 0, 0, 0.8);
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-1lejymi {
     text-transform: uppercase;
@@ -302,7 +306,7 @@ a:-webkit-any-link {
     -webkit-box-align: center;
     align-items: center;
     flex-direction: row;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
 }
 .css-y7lu36 > :not(style) ~ :not(style) {
     margin-top: 0px;
@@ -364,14 +368,14 @@ a:-webkit-any-link {
     border-image-width: 1px;
     /* border-image-outset: ; */
     /* border-image-repeat: ; */
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
 }
 .css-o60zcr {
     border-radius: var(--chakra-radii-lg);
     width: 100%;
     border-width: 1px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     height: 38px;
     display: flex;
     background: var(--chakra-colors-black);
@@ -384,7 +388,7 @@ a:-webkit-any-link {
     padding-inline-end: 12px;
     border-right-width:1px ;
     border-right-style:solid;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-15tfjzk{
     width: 20px;
@@ -429,7 +433,7 @@ a:-webkit-any-link {
     -webkit-box-align: center;
     align-items: center;
     border-radius: var(--chakra-radii-xl);
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     background: var(--chakra-colors-black);
 }
 .css-1x6zq7v {
@@ -442,7 +446,7 @@ a:-webkit-any-link {
     border-bottom-width: 1px;
     border-bottom-style:solid;
     padding: 24px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-1x97c6v {
     width: 80%;
@@ -452,7 +456,7 @@ a:-webkit-any-link {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 30px;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     text-transform: uppercase;
 }
 .css-x2jlx {
@@ -487,7 +491,7 @@ a:-webkit-any-link {
     justify-content: center;
     width: 100%;
     border-width: 1px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
     background: var(--chakra-colors-black);
 }
@@ -552,7 +556,7 @@ a:-webkit-any-link {
     /* border-image-outset: ; */
     /* border-image-repeat: ; */
     border-radius: var(--chakra-radii-xl);
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     flex: 1 1 0%;
     background: var(--chakra-colors-black);
 }
@@ -566,7 +570,7 @@ a:-webkit-any-link {
     border-bottom-width:1px ;
     border-bottom-style:solid;
     padding: 24px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     flex: 1 1 0%;
 }
 .css-1ruhbjz {
@@ -574,7 +578,7 @@ a:-webkit-any-link {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 30px;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0px;
@@ -589,7 +593,7 @@ a:-webkit-any-link {
     /* border-bottom-width: ; */
     /* border-bottom-style: ; */
     padding: 24px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     flex: 1 1 0%;
 }
 .css-b95f0i{
@@ -627,7 +631,7 @@ a:-webkit-any-link {
     /* border-image-repeat: ; */
     height: 100%;
     width: 100%;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
 }
 .css-dlsxfg{
@@ -639,7 +643,7 @@ a:-webkit-any-link {
 .css-q93ar1{
     display: flex;
     border-width: 1px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
     height: 58px;
     background: var(--chakra-colors-black);
@@ -652,7 +656,7 @@ a:-webkit-any-link {
     padding-inline-end: 20px;
     border-right-width: 1px;
     border-right-style: solid;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-yikrym{
     width: 20px;
@@ -693,7 +697,7 @@ a:-webkit-any-link {
     /* border-image-outset: ; */
     /* border-image-repeat: ; */
     margin-left: 20px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     background: var(--chakra-colors-black);
     border-radius: var(--chakra-radii-xl);
 }
@@ -721,7 +725,7 @@ a:-webkit-any-link {
     border-top-style: solid;
     width: 100%;
     flex: 1 1 0%;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-6gs9hh{
     /* width: 70%; */
@@ -738,7 +742,7 @@ a:-webkit-any-link {
     width: 80px;
     border-left-width: 1px;
     border-left-style:solid ;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-jiugte{
     display: flex;
@@ -759,7 +763,7 @@ a:-webkit-any-link {
     display: flex;
     flex: 1 1 0%;
     border-width: 1px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
     background: var(--chakra-colors-black);
 }
@@ -769,12 +773,12 @@ a:-webkit-any-link {
     width: 33%;
     /* border-right-width: 1px; */
     /* border-right-style: solid; */
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     padding: 20px 0px 20px 20px;
 }
 .css-3o4yf2 {
     text-transform: uppercase;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     font-size: 72px;
     line-height: 90px;
     font-weight: 500;
@@ -783,7 +787,7 @@ a:-webkit-any-link {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     font-size: 24px;
     margin-top: 10px;
 }
@@ -826,12 +830,12 @@ a:-webkit-any-link {
     background: var(--chakra-colors-black);
     border-radius: var(--chakra-radii-xl);
     border-width: 1px;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-inline: 8px;
-    color: var(--chakra-colors-green-500);
+    color: #00FFB0;
     font-size: 24px;
 }
 .css-ly3aem {
@@ -843,7 +847,7 @@ a:-webkit-any-link {
     border-left-style:solid;
     border-right-width:1px;
     border-right-style:solid ;
-    border-color: var(--chakra-colors-green-500);
+    border-color: #00FFB0;
 }
 .css-2n2ro8 {
     transition-property: var(--chakra-transition-property-common);
@@ -905,7 +909,7 @@ a:-webkit-any-link {
         border-right-style:solid ;
         height: 78px;
         border-radius: var(--chakra-radii-xl);
-        border-color: var(--chakra-colors-green-500);
+        border-color: #00FFB0;
     }
     .css-wm488v {
         flex: unset;
