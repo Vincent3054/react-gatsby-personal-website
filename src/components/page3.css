@@ -68,10 +68,6 @@
 .css-1iihtel .slick-track {
     display: flex;
 }
-.slick-slider .slick-list, .slick-slider .slick-track {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
 .slick-track {
     display: block;
     left: 0;

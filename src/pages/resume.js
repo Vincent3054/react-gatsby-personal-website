@@ -5,6 +5,7 @@ import '../components/page1.css'
 import '../components/page2.css'
 import '../components/page3.css'
 import '../components/page4.css'
+import '../components/page5.css'
 import Layout from '../components/layout'
 import { Grid, GridItem, Text } from '@chakra-ui/react'
 import Slider from "react-slick";
@@ -27,9 +28,9 @@ import ethtext from '../images/ethtest.png';
 import downWebm from '../images/education.ddd6aff58f188f9d70d7.gif';
 import downRightGif from '../images/AbilitiesTest2.gif';
 import downRightStyle from '../images/arrowGroup.a854994e6e9f3fb9f9c05ecfcf3b2ea5.svg';
-import ball from '../images/about_pic.610b7ef3c096f2e96e88.png';
-import mugShot from '../images/MugShot.png'
-
+import mugShot from '../images/MugShot.png';
+import Doublehand from '../images/Doublehand.png';
+import temp from '../images/work_nft_01.332c8f63861f66f99216.jpg';
 
 
 function Resume() {
@@ -71,7 +72,7 @@ function Resume() {
         return (
             <div
                 className={className}
-                style={{ ...style, opacity: 0 }}
+                style={{ ...style, display: 'none' }}
                 onClick={onClick}
             />
         );
@@ -81,7 +82,7 @@ function Resume() {
         return (
             <div
                 className={className}
-                style={{ ...style, opacity: 0 }}
+                style={{ ...style, display: 'none' }}
                 onClick={onClick}
             />
         );
@@ -94,7 +95,17 @@ function Resume() {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
-
+    const settings2 = {
+        dots: true,
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "20%",
+        slidesToShow: 1,
+        speed: 500,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
     return (
         <div className='chakra-ui-light'>
             <div id='root'>
@@ -640,13 +651,98 @@ function Resume() {
                                                             </a>
                                                         </div>
                                                     </div>
-                                                </div>                                               
+                                                </div>
                                             </div>
                                         </Slider>
                                     </div>
 
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div justify="center" className="css-8atqhb">
+                        <div className="css-1ycfcnn">
+                            <div className="css-ets80r">
+                                <h2 className="chakra-heading css-1f5itjl">Side Project</h2>
+                                <p className="chakra-text css-9ovqql">The Z Institute is dedicated to bring top tier developers into the blockchain industry and provide general blockchain education for people helping them.</p>
+                            </div>
+                            <div className="css-k008qs">
+                                <div style={{ width: `100%` }}>
+                                    <Slider className="css-wjpq14 css-wjpqstyle" style={{ display: `flex`, alignItems: `stretch`, position: `relative`, width: `100%`, borderRadius: 5 }} dir="ltr"{...settings2}>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">線上預約輔導系統</p>
+                                                </a>
+                                                <p>Technologies：C#, ASP.Net MVC, SQL Server 2017, Java Script , jQuery , React</p>
+                                                <p>Project Scope/Description：提供一個線上預約輔導系統，學生可透過系統線上預約，並隨時查看預約狀態，班級老師和輔導老師也可以了解學生輔導的狀況和查詢輔導紀錄，使控管更加方便。</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">Eye Opener-不良用眼行為警示系統</p>
+                                                </a>
+                                                <p>Technologies：C#, NET Core 3.1,Python 3.8,OpenCV, MSSQL, Java Script , jQuery ,React ,DvaJS</p>
+                                                <p>Project Scope/Description：本系統藉由兩個鏡頭蒐集使用者使用電腦時的狀態，將視距及視角輸入影像進行特徵比對和光線感測，並使用OpenCV做使用者與電腦間的距離檢測，判斷受試者當前是否為正確狀態，若為錯誤則給予警告。</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">旅行書蛙</p>
+                                                </a>
+                                                <p className="">Technologies：C#, NET Core 3.1, MSSQL, Java Script , jQuery , React, Ant Design</p>
+                                                <p>Project Scope/Description：</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">個人網站</p>
+                                                </a>
+                                                <p className="">Technologies：Java Script , jQuery , React, Gatsby.js , GraphQL , ChakraUI</p>
+                                                <p>Project Scope/Description：</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">CarRental</p>
+                                                </a>
+                                                <p className="">Technologies：mvc/netframework/mssql</p>
+                                                <p>Project Scope/Description：</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">boutique-shop </p>
+                                                </a>
+                                                <p className="">Technologies：mvc/netframework/mssql</p>
+                                                <p>Project Scope/Description：</p>
+                                            </div>
+                                        </div>
+                                        <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
+                                            <div className="css-1hnpd1e">
+                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                    <p className="chakra-text css-131hjci">makeups-shop</p>
+                                                </a>
+                                                <p className="">Technologies：mvc/netframework/mssql</p>
+                                                <p>Project Scope/Description：</p>
+                                            </div>
+                                        </div>
+                                    </Slider>
+                                </div>
+                            </div>
+                            <img src={Doublehand} className="chakra-image css-1eqhctw" />
                         </div>
                     </div>
                 </div>
