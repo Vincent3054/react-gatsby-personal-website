@@ -1,0 +1,435 @@
+form {
+    display: block;
+    margin-top: 0em;
+}
+.css-1yku1s2 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-inline-start: 18px;
+    padding-inline-end: 18px;
+    border-top-width: 1px;
+    border-top-style:solid;
+    border-color: #00FFB0;
+    color:#fff;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.css-ejdpnu {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.css-1985z01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 0px;
+}
+.css-23l46w {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    color:  #00FFB0;;
+    font-size: 40px;
+    font-weight: var(--chakra-fontWeights-bold);
+}
+.css-1lejymi {
+    text-transform: uppercase;
+}
+.css-7w6khc {
+    padding-top: 20px;
+}
+.css-mnsd50 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.css-mnsd50 > :not(style) ~ :not(style) {
+    margin-top: 0.5rem;
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+.css-y7lu362 {
+    display:none;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    color:  #00FFB0;
+}
+
+.css-1hd1wp4 {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    font-size: 30px;
+}
+.css-y7lu362 > :not(style) ~ :not(style) {
+    margin-top: 0px;
+    margin-inline: 20px 0px;
+    margin-bottom: 0px;
+}
+.css-ez5eip {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+}
+.css-uc6l60 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.css-1y8x67 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.css-1kxonj9 {
+    width: 100%;
+    position: relative;
+}
+.css-2gx1h6 {
+    display: block;
+    text-align: start;
+    font-size: var(--chakra-fontSizes-md);
+    margin-inline-end: var(--chakra-space-3);
+    margin-bottom: var(--chakra-space-2);
+    font-weight: var(--chakra-fontWeights-medium);
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    opacity: 1;
+}
+.css-1c6j008 {
+    width: 100%;
+    min-width: 0px;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    font-size: var(--chakra-fontSizes-md);
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    height: var(--chakra-sizes-10);
+    border-radius: var(--chakra-radii-md);
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: inherit;
+    background: inherit;
+}
+.css-1y8x67 > :not(style) ~ :not(style) {
+    margin-top: var(--chakra-space-3);
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+.css-uc6l60 > :not(style) ~ :not(style) {
+    margin-top: var(--chakra-space-8);
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+.css-42b2qy {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.css-k7r2wc {
+    padding-inline-end: 2rem;
+    width: 100%;
+    min-width: 0px;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    background: inherit;
+    padding-bottom: 1px;
+    line-height: var(--chakra-lineHeights-normal);
+    font-size: var(--chakra-fontSizes-md);
+    padding-inline-start: var(--chakra-space-4);
+    height: var(--chakra-sizes-10);
+    border-radius: var(--chakra-radii-md);
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: inherit;
+}
+.css-k7r2wc > option, .css-k7r2wc > optgroup {
+    background: var(--chakra-colors-white);
+}
+.css-zj2dqk {
+    width: 1.5rem;
+    height: 100%;
+    right: 0.5rem;
+    position: absolute;
+    color: currentcolor;
+    font-size: 1.25rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.css-tmj4qa {
+    width: 100%;
+    min-width: 0px;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 80px;
+    line-height: var(--chakra-lineHeights-short);
+    vertical-align: top;
+    font-size: var(--chakra-fontSizes-sm);
+    padding-inline-start: var(--chakra-space-3);
+    padding-inline-end: var(--chakra-space-3);
+    height: var(--chakra-sizes-8);
+    border-radius: var(--chakra-radii-sm);
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: inherit;
+    background: inherit;
+    resize: none;
+}
+.css-qabqbr {
+    display: inline-flex;
+    appearance: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    width: auto;
+    line-height: 1.2;
+    border-radius: var(--chakra-radii-md);
+    font-weight: var(--chakra-fontWeights-semibold);
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    height: var(--chakra-sizes-10);
+    min-width: var(--chakra-sizes-10);
+    font-size: 20px;
+    padding-inline: 24px;
+    background: #00FFB0;
+    color: var(--chakra-colors-black);
+    margin-top: 40px;
+    border: var(--chakra-borders-1px);
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+}
+.css-k42sdu {
+    /* display: flex; */
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-inline-start: 18px;
+    padding-inline-end: 18px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    /* background-image: linear-gradient(rgba(0, 255, 176, 0.1) 1px, transparent 1px), linear-gradient(to right, rgba(0, 255, 176, 0.1) 1px, black 1px); */
+    /* background-image: linear-gradient(rgba(0, 255, 176, 0.2) 1px, transparent 1px), linear-gradient(to right, rgba(0, 255, 176, 0.2) 1px, black 1px); */
+    background-color: black;
+    background-size: 20px 20px;
+    border-top-width: 1px;
+    border-top-style:solid;
+    border-color: #00FFB0;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.css-11t27k1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.css-j18tja {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.css-1qmvlpr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 25px;
+}
+.css-1hzo9fs {
+    font-size: 30px;
+    color: #00FFB0;
+}
+.css-7aqbui {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.css-7aqbui > :not(style) ~ :not(style) {
+    margin-top: 10px;
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+.css-1lxwves {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.css-1hzo9fs {
+    font-size: 30px;
+    color: #00FFB0;
+}
+.css-7aqbui {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.css-1wvtk5e {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 30px;
+}
+.css-suy9op {
+    padding-bottom: 15px;
+    color: #FFF;
+}
+.css-47f3y7 {
+    display: flex;
+    align-items: flex-end;
+    flex: 1 1 0%;
+}
+.css-1j0ajr5 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.css-3h7sem {
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-fast);
+    transition-timing-function: var(--chakra-transition-easing-ease-out);
+    cursor: pointer;
+    text-decoration: none;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    color: inherit;
+    margin-left: 10px;
+}
+.css-1j0ajr5 > :not(style) ~ :not(style) {
+    margin-top: 0.5rem;
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+.hideFoot{
+    display: none;
+}
+@media screen and (min-width: 96em){
+    .css-ejdpnu {
+        width: 1280px;
+    }
+    .css-11t27k1 {
+        width: 1280px;
+    }
+}
+@media screen and (min-width: 80em){
+    .css-ejdpnu {
+        width: 960px;
+    }
+    .css-11t27k1 {
+        width: 960px;
+    }
+}
+@media screen and (min-width: 62em){
+    .css-ejdpnu {
+        width: 80%;
+    }
+    .css-1985z01 {
+        width: 35%;
+        padding-right: 40px;
+    }
+    .css-ez5eip {
+        width: 65%;
+    }
+    .css-1y8x67 {
+        flex-direction: row;
+    }
+    .css-1y8x67 > :not(style) ~ :not(style) {
+        margin-top: 0px;
+        margin-inline-end: 0px;
+        margin-bottom: 0px;
+        margin-inline-start: var(--chakra-space-3);
+    }
+   
+    .css-11t27k1 {
+        flex-direction: row;
+        width: 80%;
+    }
+    .css-j18tja {
+        width: 35%;
+    }
+    .css-1wvtk5e {
+        align-items: flex-end;
+        width: 65%;
+        padding-top: 0px;
+    }
+    .css-1j0ajr5 {
+        align-items: flex-end;
+        padding-top: 0px;
+    }
+    
+    .hideFoot{
+        display: block;
+    }
+    .css-k42sdu {
+        padding-top: 2%;
+        padding-bottom: 2%;    
+    }
+}
+@media screen and (min-width: 48em){
+    .css-ejdpnu {
+        width: 90%;
+    }
+    .css-11t27k1 {
+        width: 90%;
+    }
+    .css-y7lu362 {
+        display:flex;
+    }
+    .css-k42sdu {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+    }
+}

@@ -80,17 +80,7 @@
     border-color: #00FFB0;
     border-radius: var(--chakra-radii-xl);
 }
-.css-2n2ro8 {
-    transition-property: var(--chakra-transition-property-common);
-    transition-duration: var(--chakra-transition-duration-fast);
-    transition-timing-function: var(--chakra-transition-easing-ease-out);
-    cursor: pointer;
-    text-decoration: none;
-    outline: transparent solid 2px;
-    outline-offset: 2px;
-    color: inherit;
-    margin-bottom: 15px;
-}
+
 .css-wjpq14 .slick-center p {
     color: rgb(0, 255, 176);
 }
@@ -104,6 +94,7 @@
     padding-top: 20px;
     padding-bottom: 5px;
     color: #00FFB0;
+    margin-bottom: 10px;
 }
 .slick-track:after {
     clear: both;
@@ -118,6 +109,9 @@
     position: relative;
     width: 100%;
     border-radius: 5px;
+}
+.hideSideProject{
+    display: none;
 }
 @media screen and (min-width: 62em){
 
@@ -134,6 +128,9 @@
     }
     .css-1eqhctw {
         margin-top: 120px;
+    }    
+    .hideSideProject{
+        display: block;
     }
 }
 @media screen and (min-width: 48em){
