@@ -31,8 +31,16 @@ import downWebm from '../images/education.ddd6aff58f188f9d70d7.gif';
 import downRightGif from '../images/AbilitiesTest2.gif';
 import downRightStyle from '../images/arrowGroup.a854994e6e9f3fb9f9c05ecfcf3b2ea5.svg';
 import mugShot from '../images/MugShot.png';
-import Doublehand from '../images/Doublehand.png';
+import sideProject1 from '../images/SideProject1.png';
+import sideProject2 from '../images/SideProject2.png';
+import sideProject3 from '../images/SideProject3.png';
+import sideProject4 from '../images/SideProject4.png';
+import sideProject5 from '../images/SideProject5.png';
+import sideProject6 from '../images/SideProject6.png';
+import sideProject7 from '../images/SideProject7.png';
+
 import temp from '../images/work_nft_01.332c8f63861f66f99216.jpg';
+import Doublehand from '../images/Doublehand.png';
 
 
 function Resume() {
@@ -401,7 +409,9 @@ function Resume() {
                                                         <p className="chakra-text css-1ndgkws">2021/03-2022/03</p>
                                                     </div>
                                                     <div className="css-19q6myf">
-                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                        <p className="chakra-text css-0">
+                                                            主要維護並研發8個跟OD相關的內部系統，以敏捷(Scrum)和看板(Kanban)的方式進行開發，維護的專案有使用MVC和API開發，
+                                                            接觸到的後端技術有C#, ASP.Net MVC, .NET Core, Entity Framework , MSSQL，前端技術有JavaScript, JQuery ,React。
                                                         </p>
                                                     </div>
                                                 </div>
@@ -411,7 +421,9 @@ function Resume() {
                                                         <p className="chakra-text css-1ndgkws">2020/02-2021/02</p>
                                                     </div>
                                                     <div className="css-19q6myf">
-                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                        <p className="chakra-text css-0">
+                                                            主要維護並研發2個EPR會計系統，以瀑布式(Waterfall)的方式進行開發，維護的專案有使用MVC開發，
+                                                            接觸到的後端技術有C#, ASP.Net MVC, MSSQL，前端技術有JavaScript, JQuery, Angular。
                                                         </p>
                                                     </div>
                                                 </div>
@@ -421,7 +433,10 @@ function Resume() {
                                                         <p className="chakra-text css-1ndgkws">2017/09-2021/06</p>
                                                     </div>
                                                     <div className="css-19q6myf">
-                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                        <p className="chakra-text css-0">
+                                                            以全國技藝競賽金手獎的佳績推甄進入臺中科大資管系，擔任日間部資訊管理系學會會長，
+                                                            籌備多場小型活動和七場大型活動並擔任活動總副召，積極參與校內外各項競賽，榮獲全國資訊應用服務創新競賽第三名和資訊學院專題展第三名成績，
+                                                            課外喜歡參與各式社群和論壇，擁有二年資訊公司實習經驗。
                                                         </p>
                                                     </div>
                                                 </div>
@@ -433,7 +448,10 @@ function Resume() {
                                                         <p className="chakra-text css-1ndgkws">2017/07-2019/01</p>
                                                     </div>
                                                     <div className="css-19q6myf">
-                                                        <p className="chakra-text css-0">The course planning and organization is very complete and challenging. You can become a DeFi master if fully absorb the content!
+                                                        <p className="chakra-text css-0">
+                                                            典時成金是為了技職體系選手成立的新創公司，主要業務為企業授課以及選手培訓，
+                                                            我們定期舉辦營隊、研習、競賽校園演講等活動，過程中當任講師及幹部一職。
+
                                                         </p>
                                                     </div>
                                                 </div>
@@ -507,14 +525,14 @@ function Resume() {
                                                             Perfomance Development System
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Core, JavaScript, JQuery, MSSQL, Entity Framework
-                                                            Project Scope/Description：提供員工進行績效評估、升遷的系統 同時也協助 HR 們進行表單狀態追蹤、產生報表、借用會議室
-                                                            Achievements：1.開發新加坡員工Performances功能2.重構Promotion，改善系統穩定性3.開發UI Promotion、Technical Review報表
-                                                        </p>
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Core, JavaScript, JQuery, MSSQL, Entity Framework</p>
+                                                            <p>Project Scope/Description：提供員工進行績效評估、升遷的系統 同時也協助 HR 們進行表單狀態追蹤、產生報表、借用會議室</p>
+                                                            <p>Achievements：1.開發新加坡員工Performances功能&emsp;2.重構Promotion，改善系統穩定性&emsp;3.開發UI Promotion、Technical Review報表</p>
+                                                        </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -523,17 +541,17 @@ function Resume() {
                                                     <div role="group" className="css-ccezj5">
                                                         <p className="chakra-text css-39c3a1">
                                                             <span className="css-79wky">{'{'}</span>
-                                                            Titan Talent Center
+                                                            Talent Center
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Framework, JavaScript, JQuery, MSSQL
-                                                            Project Scope/Description：協助HR進行人才招募，記錄各式面試紀錄、產生報表，根據招募結果與求職者聯繫
-                                                            Achievements：1.開發面試官後台功能，使面試相關表單可以線上填寫2.優化表單填寫功能，使表單題目可以動態更新且能版本控制3.開發排程功能，寄送面試相關提醒信
-                                                        </p>
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
+                                                            <p>Project Scope/Description：協助HR進行人才招募，記錄各式面試紀錄、產生報表，根據招募結果與求職者聯繫</p>
+                                                            <p>Achievements：1.開發面試官後台功能，使面試相關表單可以線上填寫&emsp;2.優化表單填寫功能，使表單題目可以動態更新且能版本控制&emsp;3.開發排程功能，寄送面試相關提醒信</p>
+                                                        </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -542,17 +560,18 @@ function Resume() {
                                                     <div role="group" className="css-ccezj5">
                                                         <p className="chakra-text css-39c3a1">
                                                             <span className="css-79wky">{'{'}</span>
-                                                            Titansoft Training System
+                                                            Training System
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Framework, JavaScript, JQuery, MSSQL
-                                                            Project Scope/Description：提供全公司員工申請課程、開設課程、管理課程預算，提供講師與管理者查看使用者Feedback、ASK，提供員工查看必修課程相關資訊，產生成報表。
-                                                            Achievements：1.協助MIS升級Server2.使新加坡員工能使用部分功能3.維護更新鈦坦學院功能
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
+                                                            <p>Project Scope/Description：提供全公司員工申請課程、開設課程、管理課程預算，提供講師與管理者查看使用者Feedback、ASK，提供員工查看必修課程相關資訊，產生成報表。</p>
+                                                            <p>Achievements：1.協助MIS升級Server&emsp;2.使新加坡員工能使用部分功能&emsp;3.維護更新鈦坦學院功能</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -566,14 +585,15 @@ function Resume() {
                                                             Exam
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Framework, JavaScript, JQuery, MSSQL
-                                                            Project Scope/Description：提供 HR 寄發考試信件、考試管理，並串接至 TTC 招募系統
-                                                            Achievements：1. 新增新職位的考試2. 協助查找到外部串接網站的考試額度已超額並告知 HR
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
+                                                            <p>Project Scope/Description：提供 HR 寄發考試信件、考試管理，並串接至 TTC 招募系統</p>
+                                                            <p>Achievements：1.新增新職位的考試&emsp;2.協助查找到外部串接網站的考試額度已超額並告知 HR</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -585,14 +605,15 @@ function Resume() {
                                                             Tivago
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Framework, JavaScript, JQuery, MSSQL, React
-                                                            Project Scope/Description：提供公司員工進行出差、住宿申請 並提供 Admin 進行住宿管理、寄信
-                                                            Achievements：1. 將專案 CI/CD 移轉至Gitlab 2.協助進行 2021 系統 Feedback 更新
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL, React</p>
+                                                            <p>Project Scope/Description：提供公司員工進行出差、住宿申請 並提供 Admin 進行住宿管理、寄信</p>
+                                                            <p>Achievements：1. 將專案 CI/CD 移轉至Gitlab 2.協助進行 2021 系統 Feedback 更新</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -604,14 +625,15 @@ function Resume() {
                                                             Campus
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Maintainer
-                                                            Technologies：.NET Framework, JavaScript, JQuery, MSSQL
-                                                            Project Scope/Description：校園招募系統，跟據求職者填寫的表單寄送考試信或書審通知。
-                                                            Achievements：新增新求職職位，串聯Exam寄送考試信
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Maintainer</p>
+                                                            <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
+                                                            <p>Project Scope/Description：校園招募系統，跟據求職者填寫的表單寄送考試信或書審通知。</p>
+                                                            <p>Achievements：新增新求職職位，串聯Exam寄送考試信</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -625,13 +647,14 @@ function Resume() {
                                                             伊甸基金會-ERP會計系統
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Developer
-                                                            Technologies：.NET Framework, Angular,JavaScript, JQuery, MSSQL
-                                                            Project Scope/Description：
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Developer</p>
+                                                            <p>Technologies：.NET Framework, Angular,JavaScript, JQuery, MSSQL</p>
+                                                            <p>Project Scope/Description：</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -643,13 +666,14 @@ function Resume() {
                                                             法務部矯正署-ERP會計系統
                                                             <span className="css-79wky">{'}'}</span>
                                                         </p>
-                                                        <p className="chakra-text css-rxctit">
-                                                            Role：Developer
-                                                            Technologies：.NET Framework,Angular,JavaScript, JQuery, MSSQL, React
-                                                            Project Scope/Description：
-                                                        </p>
-                                                        <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
-                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="https://zinstitute.kaik.io/">GET STARTED →
+                                                        <div className="chakra-text css-rxctit">
+                                                            <p>Role：Developer</p>
+                                                            <p>Technologies：.NET Framework,Angular,JavaScript, JQuery, MSSQL, React</p>
+                                                            <p>Project Scope/Description：</p>
+                                                        </div>
+                                                        <div spacing="16px" className="css-1htsqtv"></div>
+                                                        <div className="css-1fwbh1l">
+                                                            <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
                                                             </a>
                                                         </div>
                                                     </div>
@@ -666,79 +690,78 @@ function Resume() {
                         <div className="css-1ycfcnn">
                             <div className="css-ets80r">
                                 <h2 className="chakra-heading css-1f5itjl">Side Project</h2>
-                                <p className="chakra-text css-9ovqql">The Z Institute is dedicated to bring top tier developers into the blockchain industry and provide general blockchain education for people helping them.</p>
                             </div>
                             <div className="css-k008qs">
                                 <div style={{ width: `100%` }}>
                                     <Slider className="css-wjpq14 css-wjpqstyle" style={{ display: `flex`, alignItems: `stretch`, position: `relative`, width: `100%`, borderRadius: 5 }} dir="ltr"{...settings2}>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject7} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">線上預約輔導系統</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, ASP.Net MVC, MSSQL, Java Script , jQuery , React</p>
-                                                <p className="hideSideProject">Project Scope/Description：提供一個線上預約輔導系統，學生可透過系統線上預約，並隨時查看預約狀態，班級老師和輔導老師也可以了解學生輔導的狀況和查詢輔導紀錄，使控管更加方便。</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：提供一個線上預約輔導系統，學生可透過系統線上預約，並隨時查看預約狀態，班級老師和輔導老師也可以了解學生輔導的狀況和查詢輔導紀錄，使控管更加方便。</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject6} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">Eye Opener-不良用眼行為警示系統</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, NET Core 3.1,Python 3.8,OpenCV, MSSQL, Java Script , jQuery ,React ,DvaJS</p>
-                                                <p className="hideSideProject">Project Scope/Description：本系統藉由兩個鏡頭蒐集使用者使用電腦時的狀態，將視距及視角輸入影像進行特徵比對和光線感測，並使用OpenCV做使用者與電腦間的距離檢測，判斷受試者當前是否為正確狀態，若為錯誤則給予警告。</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：本系統藉由兩個鏡頭蒐集使用者使用電腦時的狀態，將視距及視角輸入影像進行特徵比對和光線感測，並使用OpenCV做使用者與電腦間的距離檢測，判斷受試者當前是否為正確狀態，若為錯誤則給予警告。</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject5} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">旅行書蛙</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, NET Core 3.1, MSSQL, Java Script , jQuery , React, Ant Design</p>
-                                                <p className="hideSideProject">Project Scope/Description：透過主題標籤或定位功能尋找附近展覽或書籍，填寫學習心得後匯入學習歷程。</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：透過主題標籤或定位功能尋找附近展覽或書籍，填寫學習心得後匯入學習歷程。</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject1} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">個人網站</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：Java Script , jQuery , React, Gatsby.js , GraphQL , ChakraUI</p>
-                                                <p className="hideSideProject">Project Scope/Description：響應式動態個人網站和寄信功能。</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：響應式動態個人網站和寄信功能。</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject4} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">線上租車系統</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, ASP.Net MVC, MSSQL, Java Script , jQuery</p>
-                                                <p className="hideSideProject">Project Scope/Description：會員管理，訂單管理，線上租車系統。</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：會員管理，訂單管理，線上租車系統。</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject3} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">精品購物網站</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：HTML5 , CSS3 , Java Script , jQuery , Bootstrap</p>
-                                                <p className="hideSideProject">Project Scope/Description：響應式精品購物網站介面</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：響應式精品購物網站介面</p>
                                             </div>
                                         </div>
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
-                                                <img alt="work01" src={temp} className="chakra-image css-1l6wnt8" />
+                                                <img alt="work01" src={sideProject2} width={900} className="chakra-image css-1l6wnt8" />
                                                 <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
                                                     <p className="chakra-text css-131hjci">美妝購物網站</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：HTML5 , CSS3 , Java Script , jQuery , Bootstrap</p>
-                                                <p className="hideSideProject">Project Scope/Description：響應式美妝購物網站介面</p>
+                                                <p className="hideSideProject" style={{ marginBottom: 10 }}>Project Scope/Description：響應式美妝購物網站介面</p>
                                             </div>
                                         </div>
                                     </Slider>
@@ -828,7 +851,8 @@ function Resume() {
                         </GridItem>
                         <GridItem w='100%' h='10'>
                             <p className="chakra-text css-suy9op">
-                                <span className='hideFoot'>This Web site and the Contents are intended only for the individual, non-commercial use of Web-site users.</span>(Imitate To Z INSTITUTE)  </p>
+                                <span className='hideFoot'>This Web site and the Contents are intended only for the individual, non-commercial use of Web-site users.</span>(Imitate to Z INSTITUTE)
+                            </p>
                         </GridItem>
                         <GridItem w='100%' h='10'>
                             <div className="chakra-stack css-y7lu362" style={{ justifyContent: `flex-end` }}>

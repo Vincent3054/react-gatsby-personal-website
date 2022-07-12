@@ -410,7 +410,7 @@ form {
     }
     
     .hideFoot{
-        display: block;
+        display: inline;
     }
     .css-k42sdu {
         padding-top: 2%;
