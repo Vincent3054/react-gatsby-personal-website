@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Layout from '../components/layout'
+import { Grid, GridItem, Text } from '@chakra-ui/react'
+import { Alert, AlertIcon, AlertTitle, AlertDescription } from '@chakra-ui/react'
 
+//css
 import { Link } from 'gatsby'
 import '../components/page1.css'
 import '../components/page2.css'
@@ -8,11 +13,11 @@ import '../components/page4.css'
 import '../components/page5.css'
 import '../components/page6.css'
 
-import Layout from '../components/layout'
-import { Grid, GridItem, Text } from '@chakra-ui/react'
+//slick
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 //SVG、IMG、MP4、WEBM
 import skylogo from '../images/skylogo.png';
@@ -38,13 +43,11 @@ import sideProject4 from '../images/SideProject4.png';
 import sideProject5 from '../images/SideProject5.png';
 import sideProject6 from '../images/SideProject6.png';
 import sideProject7 from '../images/SideProject7.png';
-
-import temp from '../images/work_nft_01.332c8f63861f66f99216.jpg';
 import Doublehand from '../images/Doublehand.png';
 
 
 function Resume() {
-    const [showResults, setShowResults] = useState(false)
+    const [showResults, setShowResults] = useState(false);
     const onClick = () => showResults == false ? setShowResults(true) : setShowResults(false);
     const Results = () => (
         <div className="css-15po4rs" style={{ backdropFilter: `blur(14px)` }}>
@@ -116,6 +119,30 @@ function Resume() {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
+
+
+    const [showAlert, setshowAlert] = useState(false);
+
+    const AlertStatus_success = () => (
+        <Alert status='success' variant='solid'>
+            <AlertIcon />
+            Email has been successfully sent.
+        </Alert>
+    )
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_7c7jsdj', 'template_rhg0b3c', form.current, 'XLWydIgVAmQJvL7xC')
+            .then((result) => {
+                console.log(result.text);
+                setshowAlert(true)
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+
     return (
         <div className='chakra-ui-light'>
             <div id='root'>
@@ -418,7 +445,7 @@ function Resume() {
                                                 <div className="css-1p2x7r1">
                                                     <div className="css-2tjxfx">
                                                         <p className="chakra-text css-nhq6ym">國興資訊</p>
-                                                        <p className="chakra-text css-1ndgkws">2020/02-2021/02</p>
+                                                        <p className="chakra-text css-1ndgkws">2020/03-2021/02</p>
                                                     </div>
                                                     <div className="css-19q6myf">
                                                         <p className="chakra-text css-0">
@@ -774,12 +801,16 @@ function Resume() {
                         <div name="Contact">
                             <div className="css-1yku1s2">
                                 <div className="css-ejdpnu">
+                                    {showAlert == true ? <AlertStatus_success /> : ""}
                                     <div className="css-1985z01">
                                         <div className="css-23l46w">
                                             <p className="chakra-text css-1lejymi">Contact</p>
                                             <p className="chakra-text css-0">→</p>
                                         </div>
-                                        <p className="chakra-text css-7w6khc">The Z Institute provides professional blockchain consultants and customized development. We have profound development experience in EVM-compatible blockchains such as Ethereum, Binance Smart Chain, EOS, and Solana. Includes NFTs, games, token contracts, etc. We accept anonymous developement and 100% crypto currency payment. We also cooperate with lawyers to deal with crypto currency's legal issue. </p>
+                                        <p className="chakra-text css-7w6khc">
+                                            如果您對我的簡歷感到興趣或想要進一步的了解，歡迎邀約面試或深度對談，我將會盡快回信，謝謝!
+                                            (此網站為個人簡歷恕不接受任何商業委託)
+                                        </p>
                                         <div className="chakra-stack css-mnsd50">
                                             <p className="chakra-text css-0">Email:ok96305@gmail.com</p>
                                             <div className="chakra-stack css-y7lu36">
@@ -815,7 +846,7 @@ function Resume() {
                                         </div>
                                     </div>
                                     <div className="css-ez5eip">
-                                        <form>
+                                        <form ref={form} onSubmit={sendEmail}>
                                             <div className="chakra-stack css-uc6l60">
                                                 <div className="chakra-stack css-1y8x67">
                                                     <div role="group" className="chakra-form-control css-1kxonj9">
@@ -825,7 +856,7 @@ function Resume() {
                                                 </div>
                                                 <div role="group" className="chakra-form-control css-1kxonj9">
                                                     <label htmlFor="mail" id="field-33-label" className="chakra-form__label css-2gx1h6">Email address</label>
-                                                    <input name="mail" placeholder="Your Mail" id="field-33" className="chakra-input css-1c6j008" />
+                                                    <input name="email" placeholder="Your Mail" id="field-33" className="chakra-input css-1c6j008" />
                                                 </div>
                                                 <div role="group" className="chakra-form-control css-1kxonj9">
                                                     <label htmlFor="title" id="field-33-label" className="chakra-form__label css-2gx1h6">Title</label>

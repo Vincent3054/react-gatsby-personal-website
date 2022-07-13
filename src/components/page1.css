@@ -731,6 +731,7 @@ a:-webkit-any-link {
     /* width: 70%; */
     margin-bottom: 0px;
     padding-right: 10px;
+    padding-left: 10px;
 }
 .css-1cvzsx5{
     display: flex;
