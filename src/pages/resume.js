@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import Layout from '../components/layout'
 import { Grid, GridItem, Text } from '@chakra-ui/react'
 import { Alert, AlertIcon, AlertTitle, AlertDescription } from '@chakra-ui/react'
+import intl from 'react-intl-universal';
+import EN from '../language/EN.json';
+import CH from '../language/CH.json';
 
 //css
 import { Link } from 'gatsby'
@@ -48,16 +51,15 @@ import Doublehand from '../images/Doublehand.png';
 
 function Resume() {
     const [showResults, setShowResults] = useState(false);
-    const onClick = () => showResults == false ? setShowResults(true) : setShowResults(false);
+    const openHamburger = () => showResults == false ? setShowResults(true) : setShowResults(false);
     const Results = () => (
         <div className="css-15po4rs" style={{ backdropFilter: `blur(14px)` }}>
+            <a className="chakra-link css-v9r38k">HOME</a>
             <a className="chakra-link css-v9r38k">ABOUT</a>
-            <a className="chakra-link css-v9r38k">VISION</a>
-            <a className="chakra-link css-v9r38k">SERVICE</a>
-            <a className="chakra-link css-v9r38k">COURSE</a>
-            <a className="chakra-link css-v9r38k">INSTRUCTOR</a>
-            <a className="chakra-link css-v9r38k">PARTNER</a>
-            <a className="chakra-link css-v9r38k">Q&amp;A</a>
+            <a className="chakra-link css-v9r38k">EXPERIENCE</a>
+            <a className="chakra-link css-v9r38k">PROJECT</a>
+            <a className="chakra-link css-v9r38k">SIDE PROJECT</a>
+            <a className="chakra-link css-v9r38k">CONTACT</a>
         </div>
     )
     const [scrolling, setScrolling] = useState(false);
@@ -120,9 +122,7 @@ function Resume() {
         prevArrow: <SamplePrevArrow />
     };
 
-
     const [showAlert, setshowAlert] = useState(false);
-
     const AlertStatus_success = () => (
         <Alert status='success' variant='solid'>
             <AlertIcon />
@@ -142,6 +142,70 @@ function Resume() {
             });
     };
 
+    const locales = {
+        "en_US": EN,
+        "en_CN": CH,
+    };
+    const [initDone, setinitDone] = useState(false);
+    const [language, setLanguage] = useState('en_CN');
+
+    useEffect(() => {
+        if (initDone == false) {
+            loadLocales();
+            //bug code
+            changeLanguage('en_CN');
+            changeLanguage('en_US');
+
+        }
+    });
+
+    const loadLocales = () => {
+        intl.init({
+            currentLocale: language, locales
+        })
+            .then(() => {
+                setinitDone(true);
+            })
+    }
+
+    const changeLanguage = (status) => {
+        var tag1 = document.getElementById("changeLanguageTag1");
+        var tag2 = document.getElementById("changeLanguageTag2");
+        var tag1_1 = document.getElementById("changeLanguageTag1_1");
+        var tag1_2 = document.getElementById("changeLanguageTag1_2");
+        var tag2_1 = document.getElementById("changeLanguageTag2_1");
+        var tag2_2 = document.getElementById("changeLanguageTag2_2");
+
+        if (status === 'en_US') {
+            tag1.classList.add("css-1sxrsep");
+            tag1.classList.remove("css-1m50zn");
+            tag1_1.classList.add("css-1irktzc");
+            tag1_1.classList.remove("css-ix2b0u");
+            tag1_2.classList.add("css-1irktzc");
+            tag1_2.classList.remove("css-ix2b0u");
+            tag2.classList.add("css-1m50zn");
+            tag2.classList.remove("css-1sxrsep");
+            tag2_1.classList.add("css-ix2b0u");
+            tag2_1.classList.remove("css-1irktzc");
+            tag2_2.classList.add("css-ix2b0u");
+            tag2_2.classList.remove("css-1irktzc");
+        } else {
+            tag2.classList.add("css-1sxrsep");
+            tag2.classList.remove("css-1m50zn");
+            tag2_1.classList.add("css-1irktzc");
+            tag2_1.classList.remove("css-ix2b0u");
+            tag2_2.classList.add("css-1irktzc");
+            tag2_2.classList.remove("css-ix2b0u");
+            tag1.classList.add("css-1m50zn");
+            tag1.classList.remove("css-1sxrsep");
+            tag1_1.classList.add("css-ix2b0u");
+            tag1_1.classList.remove("css-1irktzc");
+            tag1_2.classList.add("css-ix2b0u");
+            tag1_2.classList.remove("css-1irktzc");
+        }
+        setLanguage(status);
+        loadLocales();
+    }
 
     return (
         <div className='chakra-ui-light'>
@@ -157,31 +221,31 @@ function Resume() {
                             </a>
                         </div>
                         <div className="css-kz2ai8" style={{ backdropFilter: `blur(14px)` }}>
-                            <a className="chakra-link css-v9r38k">ABOUT</a>
-                            <a className="chakra-link css-v9r38k">VISION</a>
-                            <a className="chakra-link css-v9r38k">SERVICE</a>
-                            <a className="chakra-link css-v9r38k">COURSE</a>
-                            <a className="chakra-link css-v9r38k">INSTRUCTOR</a>
-                            <a className="chakra-link css-v9r38k">PARTNER</a>
-                            <a className="chakra-link css-v9r38k">Q&amp;A</a>
-                            <a target="_blank" rel="noopener" className="chakra-link css-1uzmgig" href="https://medium.com/the-z-institute">blog</a>
-                            <a className="chakra-link css-zaqq0p"></a>
+                            <a className="chakra-link css-v9r38k">HOME</a>
+                            <a className="chakra-link css-v9r38k" href="#about">ABOUT</a>
+                            <a className="chakra-link css-v9r38k">EXPERIENCE</a>
+                            <a className="chakra-link css-v9r38k">PROJECT</a>
+                            <a className="chakra-link css-v9r38k">SIDE PROJECT</a>
+                            <a className="chakra-link css-v9r38k">CONTACT</a>
                         </div>
                         <div className="chakra-stack css-cvhavf" style={{ backdropFilter: `blur(14px)` }}>
-                            <button type="button" className="chakra-button css-1m50zn" >
-                                <p className="chakra-text css-ix2b0u">&lt;/</p>
-                                <p className="chakra-text css-2k2zd">中</p>
-                                <p className="chakra-text css-ix2b0u">&gt;</p></button>
-                            <button type="button" className="chakra-button css-1sxrsep" >
-                                <p className="chakra-text css-1irktzc">&lt;/</p>
-                                <p className="chakra-text css-2k2zd">EN</p>
-                                <p className="chakra-text css-1irktzc">&gt;</p></button>
+                            <button type="button" className="chakra-button css-1sxrsep" id='changeLanguageTag1' >
+                                <p className="chakra-text css-1irktzc" id='changeLanguageTag1_1'>&lt;/</p>
+                                <p className="chakra-text css-2k2zd" onClick={() => changeLanguage('en_US')}>中</p>
+                                <p className="chakra-text css-1irktzc" id='changeLanguageTag1_2'>&gt;</p></button>
+                            <button type="button" className="chakra-button css-1m50zn" id='changeLanguageTag2'>
+                                <p className="chakra-text css-ix2b0u" id='changeLanguageTag2_1'>&lt;/</p>
+                                <p className="chakra-text css-2k2zd" onClick={() => changeLanguage('en_CN')}>EN</p>
+                                <p className="chakra-text css-ix2b0u" id='changeLanguageTag2_2'>&gt;</p></button>
                         </div>
                         <div className="css-14lqyx8">
                             <div className="css-k008qs">
-                                <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon css-183pgf2" onClick={onClick} >
+                                {showResults ? <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon css-1mfkq3i" onClick={openHamburger}>
+                                    <path fill="currentColor" d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z">
+                                    </path>
+                                </svg> : <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon css-183pgf2" onClick={openHamburger} >
                                     <path fill="currentColor" d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path>
-                                </svg>
+                                </svg>}
                                 {showResults ? <Results /> : null}
                             </div>
                         </div>
@@ -351,7 +415,7 @@ function Resume() {
                         </div>
                     </div>
                     <div justify="center" className="css-8atqhb">
-                        <div name="about">
+                        <div name="about" id="about">
                             <div className="css-1htib5q">
                                 <div className="css-15nuc2v">
                                     <div className="css-3kl7zo">
@@ -432,38 +496,34 @@ function Resume() {
                                             <div className='css-z4vrou'>
                                                 <div className="css-1p2x7r1">
                                                     <div className="css-2tjxfx">
-                                                        <p className="chakra-text css-nhq6ym">新加坡商鈦坦科技</p>
+                                                        <p className="chakra-text css-nhq6ym">{intl.get("ExperienceTitle1")}</p>
                                                         <p className="chakra-text css-1ndgkws">2021/03-2022/03</p>
                                                     </div>
                                                     <div className="css-19q6myf">
                                                         <p className="chakra-text css-0">
-                                                            主要維護並研發8個跟OD相關的內部系統，以敏捷(Scrum)和看板(Kanban)的方式進行開發，維護的專案有使用MVC和API開發，
-                                                            接觸到的後端技術有C#, ASP.Net MVC, .NET Core, Entity Framework , MSSQL，前端技術有JavaScript, JQuery ,React。
+                                                            {intl.get("Experience1")}
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div className="css-1p2x7r1">
                                                     <div className="css-2tjxfx">
-                                                        <p className="chakra-text css-nhq6ym">國興資訊</p>
+                                                        <p className="chakra-text css-nhq6ym">{intl.get("ExperienceTitle2")}</p>
                                                         <p className="chakra-text css-1ndgkws">2020/03-2021/02</p>
                                                     </div>
                                                     <div className="css-19q6myf">
                                                         <p className="chakra-text css-0">
-                                                            主要維護並研發2個EPR會計系統，以瀑布式(Waterfall)的方式進行開發，維護的專案有使用MVC開發，
-                                                            接觸到的後端技術有C#, ASP.Net MVC, MSSQL，前端技術有JavaScript, JQuery, Angular。
+                                                            {intl.get("Experience2")}
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div className="css-1p2x7r1">
                                                     <div className="css-2tjxfx">
-                                                        <p className="chakra-text css-nhq6ym">國立臺中科技大學</p>
+                                                        <p className="chakra-text css-nhq6ym">{intl.get("ExperienceTitle3")}</p>
                                                         <p className="chakra-text css-1ndgkws">2017/09-2021/06</p>
                                                     </div>
                                                     <div className="css-19q6myf">
                                                         <p className="chakra-text css-0">
-                                                            以全國技藝競賽金手獎的佳績推甄進入臺中科大資管系，擔任日間部資訊管理系學會會長，
-                                                            籌備多場小型活動和七場大型活動並擔任活動總副召，積極參與校內外各項競賽，榮獲全國資訊應用服務創新競賽第三名和資訊學院專題展第三名成績，
-                                                            課外喜歡參與各式社群和論壇，擁有二年資訊公司實習經驗。
+                                                            {intl.get("Experience3")}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -471,14 +531,12 @@ function Resume() {
                                             <div className='css-z4vrou'>
                                                 <div className="css-1p2x7r1">
                                                     <div className="css-2tjxfx">
-                                                        <p className="chakra-text css-nhq6ym">典時成金</p>
+                                                        <p className="chakra-text css-nhq6ym">{intl.get("ExperienceTitle4")}</p>
                                                         <p className="chakra-text css-1ndgkws">2017/07-2019/01</p>
                                                     </div>
                                                     <div className="css-19q6myf">
                                                         <p className="chakra-text css-0">
-                                                            典時成金是為了技職體系選手成立的新創公司，主要業務為企業授課以及選手培訓，
-                                                            我們定期舉辦營隊、研習、競賽校園演講等活動，過程中當任講師及幹部一職。
-
+                                                            {intl.get("Experience4")}
                                                         </p>
                                                     </div>
                                                 </div>
