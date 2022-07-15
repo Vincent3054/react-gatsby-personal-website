@@ -93,7 +93,7 @@ a:-webkit-any-link {
     display: flex;
     width: 100%;
     max-width: 1440px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: unset;
     border-width: 0px 0px 1px;
     border-top-style: initial;
@@ -264,16 +264,26 @@ a:-webkit-any-link {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    position: fixed;
+    position: fixed !important;
     background: rgba(0, 0, 0, 0.8);
     top: 48px;
     left: 0px;
-    width: 100vw;
+    width: 98vw;
     height: calc(100vh - 96px);
 }
+
 .css-183pgf2 {
     width: var(--chakra-sizes-6);
     height: var(--chakra-sizes-6);
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: #00FFB0;
+    vertical-align: middle;
+}
+.css-1mfkq3i {
+    width: var(--chakra-sizes-4);
+    height: var(--chakra-sizes-4);
     display: inline-block;
     line-height: 1em;
     flex-shrink: 0;
@@ -902,6 +912,7 @@ a:-webkit-any-link {
         top: 20px;
     }
     .css-iybxr5 {
+        overflow: hidden;
         border-top-width: 1px;
         border-top-style: solid;
         border-left-width:1px ;
@@ -963,7 +974,10 @@ a:-webkit-any-link {
     }
     .css-16w502t{
         font-size: 16px;
-    }           
+    }         
+    .css-zo65ya {
+        display: none;
+    }  
 }
 @media screen and (min-width: 48em){
     .css-v9r38k {
@@ -974,9 +988,6 @@ a:-webkit-any-link {
     }
     .css-zaqq0p {
         font-size: 16px;
-    }
-    .css-zo65ya {
-        display: none;
     }
     .css-ak2fvk{
         font-size: 12px;
