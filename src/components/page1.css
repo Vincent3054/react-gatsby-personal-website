@@ -18,6 +18,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
     touch-action: manipulation;
+    scroll-behavior: smooth;
 }
 body {
     font-family: var(--chakra-fonts-body);
