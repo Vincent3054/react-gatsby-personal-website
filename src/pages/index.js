@@ -84,8 +84,9 @@ const IndexPage = () => (
             />
             <h1>
                 Welcome to <b>Gatsby!</b>
-                <Link to="/home/">Go to Home page</Link>
-                <Link to="/resume/">Go to resume page</Link>
+            </h1>
+            <h1>
+                <Link to="/resume/"><b style={{ color: `#7026b9` }}>Go to resume page</b></Link>
             </h1>
             <p className={styles.intro}>
                 <b>Example pages:</b>{" "}

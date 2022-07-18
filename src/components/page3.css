@@ -177,7 +177,9 @@
 .css-1iihtel .slick-dots li.slick-active button::before {
     color: rgb(15, 255, 176) !important;
 }
-
+.slick-dots li.slick-active button::before {
+    color: rgb(15, 255, 176) !important;
+}
 
 .css-1rr5s11 {
     display: flex;
