@@ -60,4 +60,5 @@ module.exports = {
         },
       },
   ],
+  pathPrefix:'/react-gatsby-resume',
 }

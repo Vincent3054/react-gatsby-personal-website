@@ -1,9 +1,11 @@
 {
+  "homepage": "https://github.com/Vincent3054/react-gatsby-resume",
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "deploy": "gatsby build --prefix-paths && gh-pages -d public",
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^3.0.1",
     "@chakra-ui/react": "^2.2.1",
@@ -32,6 +34,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   },
   "keywords": [
