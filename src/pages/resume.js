@@ -274,7 +274,7 @@ function Resume() {
                 </div>
                 <div className='css-j7qwjs'>
                     <div justify="center" className="css-8atqhb">
-                        <div name="hero" id='home' activeClassName="active">
+                        <div name="hero" id='home'>
                             <div className="css-1ivkluv">
                                 <div className="css-hboir5">
                                     <div className="css-1skky35">
@@ -606,8 +606,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Core, JavaScript, JQuery, MSSQL, Entity Framework</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope1")}</p>
-                                                            <p>Achievements：{intl.get("Achievements1")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope1")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements1")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
                                                             <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
@@ -625,8 +625,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope2")}</p>
-                                                            <p>Achievements：{intl.get("Achievements2")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope2")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements2")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div><div className="css-1fwbh1l">
                                                             <a target="_blank" rel="noopener" className="chakra-link css-1ai4ze8" align="right" href="#">GET STARTED →
@@ -644,8 +644,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope3")}</p>
-                                                            <p>Achievements：{intl.get("Achievements3")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope3")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements3")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -666,8 +666,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope4")}</p>
-                                                            <p>Achievements：{intl.get("Achievements4")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope4")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements4")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -686,8 +686,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL, React</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope5")}</p>
-                                                            <p>Achievements：{intl.get("Achievements5")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope5")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements5")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -706,8 +706,8 @@ function Resume() {
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Maintainer</p>
                                                             <p>Technologies：.NET Framework, JavaScript, JQuery, MSSQL</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope6")}</p>
-                                                            <p>Achievements：{intl.get("Achievements6")}</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope6")}</p>
+                                                            <p className='css-rxctit-hide'>Achievements：{intl.get("Achievements6")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -727,8 +727,8 @@ function Resume() {
                                                         </p>
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Developer</p>
-                                                            <p>Technologies：.NET Framework, Angular,JavaScript, JQuery, MSSQL</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope7")}</p>
+                                                            <p className='css-rxctit-hide'>Technologies：.NET Framework, Angular,JavaScript, JQuery, MSSQL</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope7")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -746,8 +746,8 @@ function Resume() {
                                                         </p>
                                                         <div className="chakra-text css-rxctit">
                                                             <p>Role：Developer</p>
-                                                            <p>Technologies：.NET Framework,Angular,JavaScript, JQuery, MSSQL, React</p>
-                                                            <p>Project Scope/Description：{intl.get("ProjectScope8")}</p>
+                                                            <p className='css-rxctit-hide'>Technologies：.NET Framework,Angular,JavaScript, JQuery, MSSQL, React</p>
+                                                            <p className='css-rxctit-hide'>Project Scope/Description：{intl.get("ProjectScope8")}</p>
                                                         </div>
                                                         <div spacing="16px" className="css-1htsqtv"></div>
                                                         <div className="css-1fwbh1l">
@@ -775,7 +775,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject7} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/react_education_frontend">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle1")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, ASP.Net MVC, MSSQL, Java Script , jQuery , React</p>
@@ -785,7 +785,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject6} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/dva_eye_frontend">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle2")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, NET Core 3.1,Python 3.8,OpenCV, MSSQL, Java Script , jQuery ,React ,DvaJS</p>
@@ -795,7 +795,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject5} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/react_BookFrog_frontend">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle3")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, NET Core 3.1, MSSQL, Java Script , jQuery , React, Ant Design</p>
@@ -805,7 +805,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject1} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/react-gatsby-personal-website">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle4")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：Java Script , jQuery , React, Gatsby.js , GraphQL , ChakraUI</p>
@@ -815,7 +815,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject4} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/net-mvc-CarRental">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle5")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：C#, ASP.Net MVC, MSSQL, Java Script , jQuery</p>
@@ -825,7 +825,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject3} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/ui-case-clothing-shop">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle6")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：HTML5 , CSS3 , Java Script , jQuery , Bootstrap</p>
@@ -835,7 +835,7 @@ function Resume() {
                                         <div tabIndex="-1" className="css-12t0pqb" style={{ width: `100%`, display: `inline-block` }}>
                                             <div className="css-1hnpd1e">
                                                 <img alt="work01" src={sideProject2} width={900} className="chakra-image css-1l6wnt8" />
-                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://www.fxhash.xyz/generative/10539">
+                                                <a target="_blank" rel="noopener" className="chakra-link css-2n2ro8" href="https://github.com/Vincent3054/ui-case-makeups-shop">
                                                     <p className="chakra-text css-131hjci">{intl.get("SideProjectTitle7")}</p>
                                                 </a>
                                                 <p className="hideSideProject">Technologies：HTML5 , CSS3 , Java Script , jQuery , Bootstrap</p>
